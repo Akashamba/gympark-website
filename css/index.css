@@ -1,0 +1,119 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;  /*  light=300   Regular=400  */
+    background-color: #f2f2f2; 
+}
+
+a {
+    color: rgb(102, 145, 124);
+}
+
+.copyright a:hover {
+    color: rgb(82, 112, 97);
+}
+
+.hero {
+    background-image: url('../images/hero-1.jpg');
+    background-size: cover;
+    height: 70vh;
+    margin-bottom: 80px;
+    color: #fff;
+}
+
+header {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0));
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.2s ease-in;
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 9%;
+}
+
+.grid * {
+    margin: 10px;
+}
+
+.grid img {
+    width: 300px;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.footer-hero {
+    font-size: 1.5rem;
+    margin: 100px 0;
+}
+
+footer span {
+    display: block;
+    margin: 80px 0;
+}
+
+footer li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+}
+
+@media(min-width: 1024px) {
+
+    .grid {
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 9% 100px 9%;
+    }
+
+    .grid p {
+        width: 500px;
+    }
+    
+}
