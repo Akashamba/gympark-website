@@ -12,7 +12,17 @@
     <div class="hero">
         <header>
             <span class="logo">GYMSHARK</span>
-            <nav>
+            <nav class="nav-large">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <span class="menu-button" onclick="openMenu()">Menu</span>
+            <nav class="nav-small">
                 <ul>
                     <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
@@ -45,9 +55,7 @@
             <img src="images/grid-1.jpg" alt="">
         </section>
 
-        <section class="grid">
-            <img src="images/grid-2.jpg" alt="">
-            
+        <section class="grid reverse">
             <div>
                 <h2>Lorem Ipsum</h2>
                 <p>
@@ -62,6 +70,9 @@
                     ratione qui beatae ea adipisci possimus.
                 </p>
             </div>
+
+            <img src="images/grid-2.jpg" alt="">
+            
         </section>
 
         <section class="grid">
@@ -113,5 +124,6 @@
 
     </footer>
     
+    <script src="js/script.js"></script>
 </body>
 </html>
