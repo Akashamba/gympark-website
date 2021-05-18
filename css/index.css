@@ -20,18 +20,21 @@ a {
 }
 
 .hero {
-    background-image: url('../images/hero-1.jpg');
     background-size: cover;
+    color: #fff;
+}
+
+.hero-index {
+    background-image: url('../images/hero-1.jpg');
     height: 70vh;
     margin-bottom: 80px;
-    color: #fff;
 }
 
 header {
     padding: 30px;
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.74), rgba(0,0,0,0));
 }
 
 .logo {
@@ -132,6 +135,9 @@ footer li {
 }
 
 @media(min-width: 1024px) {
+    .nav-small {
+        display: none;
+    }
 
     .nav-large {
         display: block;
@@ -146,8 +152,8 @@ footer li {
     .nav-large a {
         text-decoration: none;
         color: #fff;
-        padding: 7px 15px;
-        border-radius: 30px;
+        padding: 7px 11px;
+        border-radius: 5px;
         background-color: rgba(255, 255, 255, 0);
         transition: 0.2s ease-in;
     }
