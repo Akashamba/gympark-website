@@ -8,6 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;  /*  light=300   Regular=400  */
     background-color: #f2f2f2; 
+    overflow-x: hidden;
 }
 
 a {
@@ -42,20 +43,41 @@ header {
     display: none;
 }
 
-.active {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-.nav-large a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
 .menu-button {
     margin-top: 10px;
 }
 
 .nav-small {
-    display: none;
+    width: 48vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    padding: 100px 0px;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+}
+
+.nav-small .close {
+    position: absolute;
+    top: 40px;
+    right: 30px; 
+}
+
+.nav-small li {
+    list-style: none;
+}
+
+.nav-small a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 20px 20px;
+}
+
+.nav-small a:active {
+    background-color: rgba(255, 255, 255, 0.322);
 }
 
 h1 {
@@ -128,6 +150,14 @@ footer li {
         border-radius: 30px;
         background-color: rgba(255, 255, 255, 0);
         transition: 0.2s ease-in;
+    }
+
+    .active {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    
+    .nav-large a:hover {
+        background-color: rgba(255, 255, 255, 0.3);
     }
 
     .menu-button {
