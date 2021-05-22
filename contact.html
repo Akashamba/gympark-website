@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gymshark Fitness Studio</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/ccec0b4920.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="hero">
+    <div class="hero hero-contact">
         <header>
             <span class="logo">GYMSHARK</span>
-            <nav>
+            <nav class="nav-large">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a class="active" href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <span class="menu-button" onclick="openMenu()">Menu</span>
+            <nav class="nav-small">
+                <span class="close" onclick="closeMenu()">Close</span>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
@@ -21,68 +33,30 @@
                 </ul>
             </nav>
         </header>
-        <!-- <img src="images/hero-1.jpg" alt="intro image"> -->
+
+        <main class="contact">
+            <div class="contact-details">
+                <h2>Get in touch with us</h2>
+                <div class="contact-social-icons">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+
+                <div class="phone-email">
+                    <span>
+                        Phone: <a href="">+1 (655) 656 8987</a>
+                    </span>
+
+                    <span>
+                        Email: <a href="">fitness@gymshark.com</a></p>
+                    </span>
+                </div>
+            </div>
+        </main>
     </div>
 
-    <main>
-        <section class="grid">
-            <div>
-                <h2>Lorem Ipsum</h2>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id fugit temporibus reiciendis dolores. Odit, omnis quod 
-                    deserunt consequuntur quibusdam placeat et ea? Sequi officia
-                    ratione qui beatae ea adipisci possimus.
-                
-                    <br>
     
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id fugit temporibus reiciendis dolores. Odit, omnis quod 
-                    deserunt consequuntur quibusdam placeat et ea? Sequi officia
-                    ratione qui beatae ea adipisci possimus.
-                </p>
-            </div>
-    
-            <img src="images/grid-1.jpg" alt="">
-        </section>
-
-        <section class="grid">
-            <img src="images/grid-2.jpg" alt="">
-            
-            <div>
-                <h2>Lorem Ipsum</h2>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id fugit temporibus reiciendis dolores. Odit, omnis quod 
-                    deserunt consequuntur quibusdam placeat et ea? Sequi officia
-                    ratione qui beatae ea adipisci possimus.
-                
-                    <br>
-    
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id fugit temporibus reiciendis dolores. Odit, omnis quod 
-                    deserunt consequuntur quibusdam placeat et ea? Sequi officia
-                    ratione qui beatae ea adipisci possimus.
-                </p>
-            </div>
-        </section>
-
-        <section class="grid">
-            <div>
-                <h2>Lorem Ipsum</h2>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id fugit temporibus reiciendis dolores. Odit, omnis quod 
-                    deserunt consequuntur quibusdam placeat et ea? Sequi officia
-                    ratione qui beatae ea adipisci possimus.
-                
-                    <br>
-    
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id fugit temporibus reiciendis dolores. Odit, omnis quod 
-                    deserunt consequuntur quibusdam placeat et ea? Sequi officia
-                    ratione qui beatae ea adipisci possimus.
-                </p>
-            </div>
-    
-            <img src="images/grid-3.jpg" alt="">
-        </section>
-    </main>
-
     <footer>
         <span class="footer-hero">Kickstart your fitness journey at Gymshark Fitness Studio</span>
 
@@ -95,15 +69,15 @@
             Or find us on social media<br><br>
             <ul class="social-icons">
                 <li><a href="">
-                    <img src="images/Facebook.svg" alt="facebook">
+                    <i class="fab fa-facebook-f"></i>
                 </a></li>
 
                 <li><a href="">
-                    <img src="images/Twitter.svg" alt="twitter">
+                    <i class="fab fa-twitter"></i>
                 </a></li>
 
                 <li><a href="">
-                    <img src="images/Instagram.svg" alt="instagram">
+                    <i class="fab fa-instagram"></i>
                 </a></li>
             </div>
         </span>
@@ -111,6 +85,7 @@
         <span class="copyright">&copy; Copyright <a href="">Gymshark Fitness Studio</a> | Designed by <a href="">Akash Ambashankar</a></span>
 
     </footer>
+    <script src="js/script.js"></script>
     
 </body>
 </html>
